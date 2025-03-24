@@ -66,9 +66,7 @@ The **Blood Donation Website** is a platform that connects **blood donors** with
 
 ---
 
-## 🌐 **Live Demo**  
 
-🔗 **Check it live:** [ https://varnwal-rajan-960.github.io/Blood-Donation/ ](#)  
 
 ---
 
@@ -110,7 +108,7 @@ cd blood-donation
 
 3️⃣ **Open `index.html` in Your Browser**  
 
-💡 If using a server: Run with **Live Server** in VS Code or deploy on **Firebase/Netlify**.  
+💡 If using a server: Run with **Live Server** in VS Code or deploy on **Github**.  
 
 ---
 
@@ -141,10 +139,7 @@ cd blood-donation
 
 ---
 
-## 📞 **Contact & Support**  
 
-📩 Email: [rajankumarvarnwal1234@gmail.com] 
-🌐 Website: [https://github.com/varnwal-rajan-960](#)  
 
 ---
 
