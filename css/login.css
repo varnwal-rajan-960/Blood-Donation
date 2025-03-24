@@ -1,0 +1,101 @@
+@import url(./utilities.css);
+@import url(./style.css);
+
+.form-box{
+    height: 40rem;
+    width: 38rem;
+    position: relative;
+    text-align: center;
+    margin: 8em auto;
+    padding: 4rem 1rem;
+    background-color: #ffa8a8;
+    border: 0.2rem solid var(--text-gray);
+}
+
+.bttn{
+    margin: auto;
+    padding-bottom: 2rem;
+    color: var(--bg-white);
+    text-shadow: 0px 0px 26px 0px var(--text-gray);
+}
+
+.tgl-bttn{
+    border-bottom: 2px solid var(--text-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.textbox{
+    width: 100%;
+    cursor: text;   
+    overflow: hidden;
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--text-gray);
+    background: transparent;
+    outline: none;
+}
+
+.stbox{
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0.8rem 0;
+    margin: 2.5rem 0;
+    border: 0;
+    border-radius: 5rem;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.stbox:hover{
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+}
+
+.form-box form{
+    max-width: 40rem;
+    padding: 0 4rem;
+    position: absolute;
+}
+
+.create-act{
+    font-size: 1.4rem;
+    padding-top: 1.5rem;
+}
+
+.accept-tandc{
+    font-size: 1.4rem;
+}
+
+.forgot-pass{
+    font-size: 1.3rem;
+}
+
+.lr-links{
+    text-align: center;
+}
+
+form a:hover{
+    border-bottom: 1px solid var(--bg-white);
+}
+
+.lr-links i{
+    margin: 1rem;
+}
+
+/* .......................... Media Queries .......................... */
+
+@media screen and (max-width: 580px) {
+    .form-box{
+        margin-top: 15rem;
+    }
+
+    .accept-tandc{
+        font-size: 1.5rem;
+    }
+}

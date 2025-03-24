@@ -1,0 +1,561 @@
+@import url(./utilities.css); 
+
+/* .......................... Navbar .......................... */
+
+.navbar, .nav-items{
+    display: flex; 
+    align-items: center;
+}
+ 
+.navbar{
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.logo img{
+    width: 17rem;
+}
+
+.nav-items li{
+    margin-left: 4rem;
+}
+
+.nav-items li a{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.nav-items li a:hover{
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.login-btn:hover{
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+.sign-up-btn:hover{
+    border: 2px solid var(--bg-white);
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+    transition: all .2s;
+}
+
+/* .......................... Appointment .......................... */
+
+.appointment{
+    position: absolute;
+    top: 86%;
+    left: 88%;
+    position: fixed;
+    z-index: 995;
+}
+
+.appointment-circle{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid var(--bg-white);
+    background-color: var(--bg-red);
+    z-index: 999;
+}
+
+.appointment-circle span{
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    padding: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-white);
+    cursor: pointer;
+}
+
+.appointment-text{
+    height: 4rem;
+    width: 0rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: .8rem 0 0 1.5rem;
+    font-weight: 600;
+    border-radius: 3rem 0 0 3rem;
+    background-color: var(--bg-red);
+    border: 2px solid var(--bg-white);
+    color: var(--bg-white);
+    position: absolute;
+    top: 21%;
+    right: 52%;
+}
+
+.appointment-text p{
+    display: none;
+}
+
+.appointment-circle:hover{
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+}
+
+.appointment-circle:hover span{
+    color: var(--bg-red);
+}
+
+.appointment:hover .appointment-text{
+    width: 23rem;
+    transition: all ease-in .2s;
+}
+
+.appointment:hover .appointment-text p{
+    display: block;
+    transition: all ease-in 1s;
+}
+
+/* .......................... Showcase .......................... */
+
+.showcase-bg{
+    height: 80vh;
+}
+
+.bg-image img{
+    width: 75rem;
+    float: right;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.search-box{
+    height: 5rem;
+    width: 65rem;
+    border: 1px solid var(--text-black);
+    border-radius: 5rem;
+    padding: 0 3rem 0 3rem;
+    position: absolute;
+    overflow: hidden;
+    font-size: 1.5rem;
+    top: 67%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 26px -13px;
+}
+
+.form-1 button.comp-btn{
+    outline: hidden;
+    color: var(--text-gray);
+    border: 0;
+    background: transparent;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+}
+
+.form-1 button.comp-btn:hover{
+    color: var(--text-black);
+}
+
+.form-1 button.mob-btn{
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bd-info-wrap{
+    padding-top: 19rem;
+}
+
+.bd-info-head{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bd-info-text{
+    width: 40%;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+}
+
+.know-more-btn button{
+    margin-top: 2rem;
+}
+
+.know-more-btn button:hover{
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+/* .......................... Blog .......................... */
+
+.blog-wrap{
+    height: 100vh;
+}
+
+.blog-head{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.box-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-wrap .box img{
+    width: 35rem;
+    height: auto;
+}
+
+.box{
+    position: relative;
+    width: 35rem;
+    height: 55rem;
+}
+
+.box-head{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.box-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+.box-link-wrapper{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-bottom: 2px solid var(--bg-red);
+}
+
+.box-btn{
+    position: relative;
+    height: 5rem;
+    color: var(--bg-red);
+}
+
+.box-btn span{
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+    transform: translate(0, -50%);
+}
+
+.rm-text{
+    margin-left: 2.8rem;
+    font-size: 1.7rem;
+}
+
+.box:hover{
+    color: var(--bg-red);
+}
+
+.box-btn:hover{
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+    padding-left: 1rem;
+    transition: padding 0.2s ease-in-out;
+}
+
+/* .......................... Donate  .......................... */
+
+.dr-wrap{
+    height: 110vh;
+}
+
+.donate, .recieve{
+    position: relative;
+    width: 60rem;
+    height: 63rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    padding: 4rem;
+    border: 0.05px solid var(--olive);
+}
+
+.donate{
+    float: left;
+    background-color: var(--bg-green);
+    box-shadow: 0px 0px 10px -3px var(--olive);
+}
+
+.recieve{
+    float: right;
+    box-shadow: 0px 0px 10px -5px;
+}
+
+.donate-head, .recieve-head{
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.donate img, .recieve img{
+    width: 100%;
+}
+
+.dr-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.donate-btn, .recieve-btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    outline: hidden;
+    cursor: pointer;
+    border: 3px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--bg-white);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 0px var(--olive);
+}
+
+.donate-btn:hover, .recieve-btn:hover{
+    background-color: var(--bg-green);
+    color: var(--text-gray);
+}
+
+/* .......................... Footer  .......................... */
+
+.footer{
+    height: 50vh;
+    background-color: var(--text-gray);
+}
+
+.foot-wrap{
+    display: flex;
+}
+
+.q-links, .imp-links{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.q-links-wrapper, .imp-links-wrapper{
+    width: 30rem;
+}
+
+.footer-link-wrapper{
+    position: relative;
+    height: 3rem;
+}
+
+.footer-link-wrapper span{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: var(--bg-red);
+}
+
+.footer-link-wrapper span.footer-link-text{
+    color: var(--bg-white);
+}
+
+.footer-link-text{
+    margin-left: 2.8rem;
+    font-size: 1.3rem;
+}
+
+.foot-links-wrap{
+    display: flex;
+    padding-top: 4rem;
+    color: var(--bg-white);
+}
+
+.footer-link-wrapper:hover{
+    padding-left: 1rem;
+    transition: padding 0.2s ease-in-out; 
+}
+
+.cr-text{
+    margin-top: 7rem;
+    font-size: 1.4rem;
+    color: var(--bg-white);
+    text-align: center;
+}
+
+.sm-links  a img{
+    margin-top: 5rem;
+    width: 3.5rem;
+    margin-right: 5rem;
+    color: var(--bg-white);
+}
+
+.l-text{
+    display: flex;
+    font-size: 4rem;
+    justify-content: end;
+}
+
+.right-text-wrap{
+    margin-top: 4rem;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.foot-l-text:hover{
+    color: var(--bg-red);
+}
+
+.foot-breaker{
+    margin-top: 5rem;
+    background-color: var(--bg-white);
+}
+
+/* .......................... Media Queries .......................... */
+
+@media screen and (max-width: 580px) {
+    html{
+        font-size: 45%;
+    }
+
+    .navbar{
+        display: block; 
+        text-align: center;
+    }
+
+    .navbar div{
+        margin-bottom: 3rem;
+    }
+
+    .navbar{
+        height: auto;
+    }
+
+    .nav-items li a{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .nav-right{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    .logo img{
+        width: 10rem;
+    }
+    
+    .bg-image img{
+        width: 48rem;
+        margin-top: 10rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .search-box{
+        height: 5rem;
+        width: 40rem;
+        top: 50%;
+        left: 50%;
+    }
+
+    .form-1 button.comp-btn{
+        width: 5rem;
+        top: 50%;
+        left: 80%;
+    }
+
+    .appointment-wrap{
+        display: none;
+    }
+
+    .box-wrap{
+        display: block;
+    }
+
+    .bd-info-head{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .bd-info-text{
+        width: auto;
+        text-align: center;
+    }    
+
+    .know-more-btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .blog-head{
+        text-align: center;
+    }
+
+    .box-wrap{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 6rem;
+    }
+
+    .rm-text{
+        margin-left: 4rem;
+    }
+
+    .blog-wrap{
+        height: 175vh;
+    }
+
+    .box{
+        margin-bottom: 5rem;
+    }
+
+    .donate, .recieve{
+        float: none;
+        width: 46rem;
+    }
+
+    .box {
+        height: 45rem;
+    }
+
+    .dr-wrap{
+        height: 155vh;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .foot-wrap{
+        display: block;
+    }
+
+    .cr-text{
+        padding-bottom: 2rem;
+    }
+}

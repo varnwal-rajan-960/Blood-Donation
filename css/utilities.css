@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@200;300;400;600&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*,
+*::after,
+*::before{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-white);
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+/* .......................... COLORS .......................... */
+
+:root{
+    --bg-white: #fffff6;
+    --bg-red: #ff4b4b;
+    --text-black: #0f141e;
+    --text-gray: #636363;
+    --bg-green: #efffef;
+    --olive: #7ca37c;
+    --dark-green: #006b54;
+}
+
+/* .......................... CONTAINERS .......................... */
+
+.container{
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* .......................... BUTTON .......................... */
+
+.primary-btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.2rem 2rem;
+    outline: hidden;
+    cursor: pointer;
+    border: 2px solid var(--bg-white);
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+}
+
+.secondary-btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.2rem 2rem;
+    outline: hidden;
+    cursor: pointer;
+    margin-left: 2rem;
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+    color: var(--bg-red);
+}
+
+/* .......................... LINE .......................... */
+
